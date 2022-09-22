@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+nav {
+    background-color: dodgerblue;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+   
+    
+
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    padding:20px;
+}
