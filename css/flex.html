@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: aquamarine;
+            display: flex; /* using flex in parent to display child as flex */
+            flex-wrap: wrap; /* display content with its given width */
+        }
+        .item {
+            height: 300px;
+            width: 500px;
+            /* background-color: orange; */
+            background-image: linear-gradient(to top right, lightblue,orange,orangered);
+            margin: 15px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .box {
+            background-color: rgba(0,0,0,0.8);
+            position: absolute;
+            top:0;
+            bottom:0;
+            left: 0;
+            right: 0;
+            display: none;
+        }
+        .item:hover  .box {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"> <!-- to make child work as parent using position relative and absolute respectively -->
+            <h2>Hello Flex</h2>
+            <div class="box"></div>
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

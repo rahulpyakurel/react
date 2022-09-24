@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Lato:wght@300&family=Macondo&display=swap');
+body {
+    background-color: aqua;
+}
+.demo-text {
+   
+    font-family: 'Macondo', cursive;
+    font-size: 50px;
+}
+.demo {
+    font-size: 30px;
+    font-family: 'Koulen', cursive;
+
+
+}

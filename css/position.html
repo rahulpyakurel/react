@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .demo {
+            width:400px;
+            height:300px;
+            background-color: rgb(30, 100, 60);
+            position: relative;
+            bottom: 30px; /*when using bottom moves to top | top wont work if using bottom */
+            right:20px; /* Relative Postion moves from its given position eg: above bottom so moves from bottom but | Other Elements cannot be seated in the gapping */
+
+        }
+        .container {
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            position: absolute;
+            top: 0; /* Moves to top of screen bacause parent DIV is BODY */
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        i>Static Position <!-- Nothing Changes | When margin doesnot work we use positioning -->
+        ii>Relative Position 
+        iii>Absolute Position
+        iv>Fixed Position
+        v>Sticky Position
+    </pre>
+    <h2>Relative Position</h2>
+    <div class="demo"></div>
+    <div class="container">hi</div> <!-- Absolute Position works on its parent div in this case body-->
+</body>
+</html>

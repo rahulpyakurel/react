@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Screen</title> <!-- either from big screen to small screen or from small screen screen to big screen-->
+    <style>
+        .container {
+            background-color: turquoise;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 10px 0;
+        }
+        .demo {
+            height: 200px;
+            width: 24%;
+            background-color: yellowgreen;
+            display: block;
+        }
+        @media screen and (max-width:992px ) { /* will work with screen less than 992px */
+            .container {
+                background-color: coral;
+            }
+            .demo {
+                width: 49%;
+                margin: 10px 0;
+            }
+        }
+        @media screen and (max-width:562px ) { /* will work with screen less than 992px */
+            .container {
+                background-color:darkcyan;
+            }
+            .demo {
+                width: 98%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+    </div>
+
+</body>
+</html>

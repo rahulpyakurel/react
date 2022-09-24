@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Postion</title>
+    <style>
+        .container {
+            height: 300px;
+            width: 600px;
+            margin: auto;
+            position: relative; /* given position so that img has position absolute */
+            background-color: bisque;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+        }
+        .left {
+            border : none;
+            background-color: dodgerblue;
+            color: #fff;
+            font-size: 50px;
+            position: absolute;
+            top: 40%;
+            left: 0;
+        }
+        .right {
+            border : none;
+            background-color: dodgerblue;
+            color: #fff;
+            font-size: 50px;
+            position: absolute;
+            top: 40%;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/img.png" alt="image content">
+        <button class="left">&lt;</button>
+        <button class="right">&gt;</button>
+    </div>
+</body>
+</html>

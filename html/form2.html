@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="10; url=https://www.facebook.com"> <!-- After 10 seconds redirects to given url in the meta tag -->
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>User Detail Form</legend>
+            <label for="fullname">Fullname</label>
+            <br>
+            <input type="text" name="fname" id="fullname" placeholder="Enter Name here" value="John Doe" readonly> <!-- If we put value placeholder will be hidden | Readonly option for fixed value-->
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="email" id="email" required> <!-- required attributes invokes mandatory msg to user-->
+            <br>
+            <label for="dob">Date of Birth</label>
+            <br>
+            <input type="date" name="dob" id="dob">
+            <br>
+            <label for="phone">Phone Number</label>
+            <br>
+            <input type="number" name="phone" id="phone">
+            <br>
+            <input type="hidden" name="user" value="user">
+            <br>
+            <label for="image">Image Upload</label>
+            <br>
+            <input type="file" name="image" id="image" accept="image/*"> <!-- Attribute image/* only possible image selection-->
+            <br>
+            <label for="datetime">Date & Time</label>
+            <br>
+            <input type="datetime" name="date" id="datetime">
+            <br>
+            <input type="search" name="search" placeholder="search here"> <!-- In search box a cross sign appears which does not appear on input type text-->
+            <br>
+            <input type="range" name="range" min="10" max="100">
+            <br>
+            <label for="msg">Message</label>
+            <br>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <br>
+
+    </fieldset> <!-- Creates a box around the area of fieldset-->
+    </form>
+    
+</body>
+</html>

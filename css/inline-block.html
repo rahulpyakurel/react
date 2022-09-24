@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Block </title>
+    <style>
+        ul{
+            background-color: aqua;
+        }
+        li {
+            display: inline;
+        }
+        a {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            /* INLINE ELEMENT INSISDE INLINE ELEMENT WONT CREATE MARGIN OR PADDING TOP OR BOTTOM | THUS WE USE INLINE BLOCK */
+            display: inline-block;
+            padding: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li> <!-- Li is Block Element-->
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Info</a></li>
+        <li><a href="#">Category</a></li>
+        <li><a href="#">Address</a></li>
+    </ul>
+</body>
+</html>

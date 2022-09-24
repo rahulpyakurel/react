@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items</title>
+
+    <style>
+        .container {
+            background-color: gray;
+            display: flex;
+            flex-wrap: wrap;
+            /*align-items: center; /* align items in parent | corresponds to the biggest sized item and centers accordingly  */
+            /* align-items: flex-end; flex end pushes to bottom */ 
+            align-items: flex-start; /* flex start pushes to top */
+            /* for align items to work width of one content has to be greater than the other cannot be equal */
+
+        }
+        .item {
+            height: 200px;
+            width: 100px;
+            background-color: aqua;
+            margin: 10px;
+        }
+        .demo {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        align items always works in y-axis
+    </pre>
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item demo"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <form action="" method="get" autocomplete="off"> <!-- Action performs after submission -->
+        <label for="firstname">FirstName</label>
+        <br>
+        <input type="text" name="fname" id="firstname" placeholder="Enter your first name here"> <!-- ID has to be as same as given on for attribute in label tag--> 
+        <br>
+        <label for="lastname">LastName</label><br>
+        <input type="text" name="lname" id="lastname" placeholder="Enter your last name here">
+        <br>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+        <br>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male" checked>Male <!-- checked assign default check/selection while opening the page -->
+        <input type="radio" name="gender" value="male" >Female <!-- With different value at attribute name , multiple selection can be dones-->
+        <input type="radio" name="gender" value="male" >Others <!-- If all checked overwrites to the last one-->
+        <br>
+
+        <label>CheckBox</label>
+        <input type="checkbox" name="subjects" value="HTML" >HTML 
+        <input type="checkbox" name="subjects" value="CSS" >CSS 
+        <input type="checkbox" name="subjects" value="JS" >JS 
+        <input type="checkbox" name="subjects" value="Node" >Node 
+        <input type="checkbox" name="subjects" value="React" >React
+        <br>
+
+        <label for="districts">Districts</label>
+        <select name="districts" id="districts"> <!-- Select for dropdown selection of an item-->
+            <option value="kathmandu">Kathmandu</option>
+            <option value="kaski">Kaski</option>
+            <option value="dhading">Dhading</option>
+            <option value="rolpa">Rolpa</option>
+            <option value="dolpa">Dolpa</option>
+            <option value="manang">Manang</option>
+            <option value="mustang">Mustang</option>
+        </select>
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" name="pass" id="password" placeholder="************">
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>

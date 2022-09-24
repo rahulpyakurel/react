@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky & Fixed</title>
+    <style>
+        * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+        }
+        header {
+            background-color: black;
+            color: aliceblue;
+            font-size: 50px;
+            padding: 10px;
+            text-align: center;
+            text-transform: capitalize; /* First letter of EVERY word will be capitalized */
+        }
+        nav {
+            background-color: dodgerblue;
+            color: #FFF;
+            font-size: 35px;
+            padding:10px;
+            text-align: center;
+            text-transform: capitalize;
+            position: sticky;
+            top: 0; /* with 0 stops as soon as parent touches | in this case body or browser */
+        }
+        main {
+            height: 1200px;
+            background-color: orange;
+            
+        }
+        footer {
+            background-color: greenyellow;
+            color: #000;
+            font-size: 26px;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 10px;;
+
+        }
+        .btn {
+            padding: 10px;
+            font-size: 30px;
+            background-color: royalblue;
+            color: #fff;
+            border-radius: 10px;
+            position: fixed; /* Works on vody as parent */
+            bottom: 5px;
+            right: 5px;
+        }
+        .article {
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            color:#000;
+            text-align: center;
+            padding-top: 140px;
+            display: inline-block;
+        }
+       
+        .article2 {
+            width: 300px;
+            height: 400px;
+            background-color: #000;
+            color:#fff;
+            text-align: center;
+            padding-top: 140px;
+            position: absolute;
+            top:138px;
+            display:none;
+           
+        }
+       .article:hover + .article2 {
+           display:block;
+       }
+      
+       
+    </style>
+</head>
+<body>
+    <header>
+        This is header 
+    </header>
+    <nav>
+        this is a nav
+    </nav>
+    <main>
+
+        <div class="article">
+            <p>hello<br>
+            wait <br>
+            how are you<br>
+            all done <br>
+            </p>
+        </div>
+        <div class="article2">
+            <p>i am new<br>
+            content <br>
+            displayed after<br>
+            hovering<br>
+            </p>
+        </div>
+        <div class="another"><p>Hello</p></div>
+
+    </main>
+    <footer>
+        &copy;this is a footer
+    </footer>
+    <button class="btn">Go Somewhere</button>
+</body>
+</html>

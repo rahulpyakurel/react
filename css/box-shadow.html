@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+       
+        .main {
+            height: 300px;
+            width: 500px;
+            background-color: rgb(100,160,52);
+            box-shadow:6px 6px 20px rgb(0,0,0,0.5); /* First horizontal | Second Vertical | Third is Blur | Fourth is Color 0.5 is for opacity*/
+        }
+        .demo {
+            height: 300px;
+            width: 500px;
+            margin: 10px auto;
+            box-shadow: 0 0 10px rgb(0, 0,0);
+        }
+        .title {
+            color: dodgerblue;
+            font-size: 50px;
+            text-align: center;
+            text-shadow: 3px 3px 10px rgb(250, 100, 40);
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+    <div class="demo"></div>
+    <h1 class="title">Text Shadow</h1>
+</body>
+</html>
